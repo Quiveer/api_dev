@@ -1,0 +1,17 @@
+{
+  "name": "api_dev",
+  "version": "1.0.0",
+  "description": "REST APIs for a user profile",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Sam",
+  "license": "MIT"
+}
