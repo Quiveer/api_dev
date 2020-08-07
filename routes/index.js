@@ -111,7 +111,7 @@ myconnection.connect(err => {
     let email = req.body.email;
     let phone = req.body.phone;
     let address = req.body.address;
-    let sql = "UPDATE `user` SET `firstName` = '" + firstName + "' `lastName` = '" + lastName + "' `email` = '" + email + "' `phone` = '" + phone + "' `address` = '" + address + "' WHERE `user`.`id` = '" + userId + "'";
+    let sql = "UPDATE `user` SET `firstName` = '" + firstName + "', `lastName` = '" + lastName + "', `email` = '" + email + "', `phone` = '" + phone + "', `address` = '" + address + "' WHERE `user`.`id` = '" + userId + "'";
     myconnection.query(sql, (err, user) => {
 	  if (err) {
       logger.info(`Error: ${err}`);
